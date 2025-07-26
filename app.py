@@ -371,6 +371,20 @@ def render_enhanced_sidebar():
     else:
         st.sidebar.info("No favorites saved yet")
 
+    # About Us section
+    st.sidebar.markdown("---")
+    st.sidebar.title("🕉️ About Us")
+    st.sidebar.markdown("""
+    **WisdomWeaver** is an AI-powered chatbot that provides mental health support and spiritual guidance using teachings from the Bhagavad Gita. Ask any life question and receive structured, meaningful answers based on ancient wisdom.
+
+    **Key Features:**
+    - Ask questions and get Gita-based answers
+    - Browse chapters and verses  
+    - Modern, easy-to-use chat interface
+
+    *Built with Python, Streamlit, and Google Gemini API.*
+    """)
+
 def main():
     """Enhanced main Streamlit application."""
     st.set_page_config(
